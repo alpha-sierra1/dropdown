@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contents {
+  display: flex;
+  gap: 3rem;
+  padding: 3rem;
+}
+.heading {
+  font-size: 4rem;
+  width: 100vw;
+  margin: 0 auto;
+}
+.contents-heading {
+  font-size: 2rem;
+  list-style: bold;
+}
+#firstList {
+  display: none;
+}
+/* ul {
+  list-style: none;
+  margin-top: 1rem;
+  display: none;
+} */
+.dropdown-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dropdown {
+  width: 2rem;
+  cursor: pointer;
+}
