@@ -10,11 +10,9 @@ const dropdownButton3 = document.getElementById('dropdown3');
 
 function dropdownHandler(el, target) {
   el.addEventListener('click', () => {
-    if (target.style.display === 'none') {
-      target.style.display = 'block';
-    } else {
-      target.style.display = 'none';
-    }
+    target.style.display === 'none'
+      ? (target.style.display = 'block')
+      : (target.style.display = 'none');
   });
 }
 
