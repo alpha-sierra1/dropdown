@@ -1,18 +1,31 @@
 // const ul1 = document.getElementById("ul-1");
 // const ul2 = document.getElementById("ul-2");
 // const ul3 = document.getElementById("ul-3");
-const firstList = document.getElementById('firstList');
-const secondList = document.getElementById('secondList');
-const thirdList = document.getElementById('thirdList');
-const dropdownButton = document.getElementById('dropdown');
-const dropdownButton2 = document.getElementById('dropdown2');
-const dropdownButton3 = document.getElementById('dropdown3');
+const firstList = document.getElementById("firstList");
+const secondList = document.getElementById("secondList");
+const thirdList = document.getElementById("thirdList");
+const dropdownButton = document.getElementById("dropdown");
+const dropdownButton2 = document.getElementById("dropdown2");
+const dropdownButton3 = document.getElementById("dropdown3");
 
+// function dropdownHandler(el, target) {
+//   el.addEventListener("click", () => {
+//     target.style.display === "none"
+//       ? (target.style.display = "block")
+//       : (target.style.display = "none");
+//   });
+// }
 function dropdownHandler(el, target) {
-  el.addEventListener('click', () => {
-    target.style.display === 'none'
-      ? (target.style.display = 'block')
-      : (target.style.display = 'none');
+  el.addEventListener("click", () => {
+    target.style.display = target.style.display === "none" ? "block" : "none";
+  });
+
+  el.addEventListener("mouseenter", () => {
+    target.style.display = "block";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    target.style.display = "none";
   });
 }
 
